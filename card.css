@@ -1,0 +1,96 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Ubuntu&display=swap');
+*{
+  margin:0;
+  padding-left: 0;
+}
+body{
+  font-family: 'Alatsi', sans-serif;
+  color:white;
+
+}
+.card{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border:5px solid black;
+  background-color:black;
+  border-radius: 20px;
+  width:300px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.image{
+  margin:-100px 70px 5px;
+  width:150px;
+  height: 150px;
+  border-radius: 50%;
+  border:2px solid gray;
+  transition: .3s ease;
+}
+.image:hover{
+  transform: scale(1.1);
+  border:5px solid white;
+}
+.image-container h4{
+  text-align: center;
+  font-size: 35px;
+}
+.details{
+  margin:0px 25px;
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.details span{
+  margin-left: 20px;
+  opacity:.5;
+}
+.details i{
+  margin-top: 10px;
+}
+.social-media{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.social-media a{
+  text-decoration: none;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+.social-media i{
+  font-size: 30px;
+  color:#763d74;
+
+}
+.social-media i:hover{
+  transform: scale(1.1);
+  text-shadow: 0px 0px 5px white,0px 0px 10px gold;
+}
+.strip{
+  position: absolute;
+  width:100%;
+  height: 40px;
+  transform: rotate(-45deg);
+  z-index: -1;
+  background: linear-gradient(35deg,#763d74 40%,#7ac2eb);
+  transition: .3s ease;
+}
+.strip1{
+  top:40px;
+  left:-60px;
+
+}
+.strip2{
+  bottom:65px;
+right:-55px;
+  background: linear-gradient(35deg,#7ac2eb 40%,#763d74);
+}
+.card:hover .strip{
+  box-shadow: 0px 0px 8px white,0px 0px 18px gold;
+}
